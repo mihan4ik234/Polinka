@@ -1,0 +1,41 @@
+.feedback-container {
+  background-color: #1D519D;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 800px;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+}
+
+
+.feedback-container input,
+.feedback-container textarea {
+  width: 98%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.feedback-container textarea {
+  height: 100px;
+}
+.feedback-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #17264d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.feedback-container button:hover {
+  background-color: #0b243f;
+}
+.footer-note {
+  font-size: 12px;
+  margin-top: 10px;
+}
+

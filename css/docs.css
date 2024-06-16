@@ -1,0 +1,21 @@
+p {
+  font-size: 22px;
+  color: #1b3e97;
+}
+
+.cont {
+  margin-left: 370px;
+  margin-top: 70px;
+}
+
+.container1 {
+  text-decoration: underline;
+  color: #1b3e97;
+  width: 640px;
+  height: 220px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 20px;
+}

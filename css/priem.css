@@ -1,0 +1,26 @@
+
+p {
+  font-size: 22px;
+  color: #1b3e97;
+}
+
+.cont {
+  margin-left: 370px;
+  margin-top: 70px;
+}
+
+.container1 {
+  width: 80%;
+  max-width: 1100px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h4 {
+  font-weight: normal;
+  color: #456890;
+  font-size: 18px;
+}
+
