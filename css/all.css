@@ -7,39 +7,60 @@ body {
 header {
   display: flex;
   flex-direction: column;
+  width: 58%;
+  margin: auto;
+  padding: 0;
+}
+
+.log {
+  display: flex;
   align-items: center;
-  text-align: center;
+  margin: 0;
 }
 
 .logo {
   width: 130px;
-  margin-top: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.logotex, .logotex2 {
+  color: #1b3e97;
+  margin: 0;
+  padding: 0;
 }
 
 .logotex {
   font-size: 24px;
-  color: #1b3e97;
-  margin: 10px 0;
+  line-height: 1;
 }
 
 .logotex2 {
   font-size: 16px;
-  color: #1b3e97;
-  margin: 5px 0;
+  line-height: 1;
 }
 
 nav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-end;
   font-size: 20px;
-  margin: 20px 0;
+  margin-top: -80px;
+  padding: 0;
 }
 
 nav a {
   text-decoration: none;
   color: #1b3e97;
-  margin: 0 15px;
+  margin: 0 10px;
 }
 
 nav a:hover {
@@ -54,9 +75,11 @@ nav a:active {
   display: grid;
   grid-template-columns: repeat(4, 40px);
   grid-template-rows: repeat(2, 40px);
-  gap: 10px;
-  justify-content: left;
-  margin-top: 20px;
+  gap: 5px;
+  justify-content: flex-end;
+  margin: 0;
+  margin-right: -30px;
+  padding: 0;
 }
 
 .sots a {
@@ -112,51 +135,66 @@ footer {
   color: #98a2b9;
 }
 
+/* Media Queries for Tablets */
+@media (max-width: 1024px) {
+  header {
+    width: 80%;
+  }
+
+  .log {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .texts {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  nav {
+    justify-content: center;
+    margin-top: 0;
+    font-size: 18px;
+  }
+}
+
+/* Media Queries for Mobile Devices */
 @media (max-width: 480px) {
+  header {
+    width: 90%;
+  }
+
   .logo {
     width: 80px;
   }
-  
+
   .logotex {
     font-size: 18px;
   }
-  
+
   .logotex2 {
     font-size: 12px;
   }
-  
+
   nav {
-    font-size: 16px;
     flex-direction: column;
+    align-items: center;
+    font-size: 16px;
   }
-  
+
   nav a {
     margin: 10px 0;
   }
-  
-  .block {
-    width: 100%;
-  }
-  
+
   .sots {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     justify-content: center;
+    margin-right: 0;
   }
-}
 
-.log{
-  display: flex;
-  align-items: end;
-  padding: 0;
-  margin: 0;
-}
-
-.texts{
-  display: grid;
-  margin: 0;
-  padding: 0;
-  border-bottom: border-box;
-  align-items: center;
+  .block {
+    width: 100%;
+    max-width: 260px;
+  }
 }
